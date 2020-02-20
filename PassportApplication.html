@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+    <meta charset="utf-8">
+    <title>Passport Application</title>
+  </head>
+  <body>
+    <form class="" action="PersonalSite.html" method="post">
+    <fieldset>
+      <legend>CAPTURE SITE PRE-PROCESSING (DO NOT WRITE IN THIS PART)</legend>
+      <br />
+      <table cellspacing = "20">
+        <tr>
+            <td>
+              <label>APPOINTMENT VERIFICATION: </label>
+            </td>
+            <td>
+              <label>REMARKS: </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea name="" rows="4" cols="80"></textarea>
+            </td>
+
+            <td>
+                <textarea name="" rows="4" cols="80"></textarea>
+            </td>
+        </tr>
+
+      </table>
+    </fieldset>
+    <fieldset>
+      <legend>PASSPORT APPLICANT’S INFORMATION</legend>
+      <table cellspacing = "30">
+        <tr>
+            <td>
+              <label>LAST NAME </label>
+              <br /><br />
+              <input type="text" name="" value="">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+              <label>FIRST NAME </label>
+              <br /><br />
+              <input type="text" name="" value="">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+              <label>MIDDLE NAME or MAIDEN LAST NAME </label>
+              <br /><br />
+              <input type="text" name="" value="">
+            </td>
+        </tr>
+
+        <tr>
+          <td>
+              <br /><br>
+          </td>
+        </tr>
+
+          <table>
+              <tr>
+                <td>
+                  <legend>GENDER</legend>
+                  <br>
+                  <label>Female</label>
+                  <input type="radio" name="Gender" value="Female">
+                  <br>
+                  <label>Male</label>
+                  <input type="radio" name="Gender" value="Male">
+                </td>
+
+                <td>
+                  <legend>DATE OF BIRTH (ex. 09/26/2017)</legend>
+                  <br>
+                    <input type="date" name="" value="">
+                    <br>
+                </td>
+
+                <td>
+                  <legend>(For born in the PHL: Municipality/City & Province
+                For born outside the PHL: Country)</legend>
+                  <br>
+                    <textarea name="" rows="4" cols=60"></textarea>
+                    <br>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <legend>CIVIL STATUS</legend>
+                  <br>
+                  <input type="radio" name="CIVIL STATUS" value="SINGLE">
+                  <label>SINGLE</label>
+                  <br>
+                  <input type="radio" name="CIVIL STATUS" value="MARRIED">
+                  <label>MARRIED</label>
+                  <br>
+                  <input type="radio" name="CIVIL STATUS" value="WIDOW/ER">
+                  <label>WIDOW/ER</label>
+                  <br>
+                  <input type="radio" name="CIVIL STATUS" value="NULLIFIED/ANNULLED">
+                  <label>NULLIFIED/ANNULLED</label>
+                  <br>
+                  <input type="radio" name="CIVIL STATUS" value="DIVORCED">
+                  <label>DIVORCED</label>
+                </td>
+
+                <td>
+                  <legend>HOW DID YOU ACQUIRE PHL CITIZENSHIP?</legend>
+                  <br>
+                  <input type="radio" name="CITIZENSHIP" value="BY BIRTH">
+                  <label>BY BIRTH</label>
+                  <br>
+                  <input type="radio" name="CITIZENSHIP" value="BY NATURALIZATION ">
+                  <label>BY NATURALIZATION </label>
+                  <br>
+                  <input type="radio" name="CITIZENSHIP" value="BY RE-ACQUISITION (RA 9225)">
+                  <label>BY RE-ACQUISITION (RA 9225) </label>
+                  <br>
+                  <input type="radio" name="CITIZENSHIP" value="BY ELECTION">
+                  <label>BY ELECTION</label>
+                  <br>
+                  <input type="radio" name="CITIZENSHIP" value="BY LEGISLATION">
+                  <label>BY LEGISLATION</label>
+                </td>
+
+                <td>
+                  <label>DID YOU EVER LOSE YOUR PH CITIZENSHIP?</label>
+                  <input type="radio" name="LOSE CITIZENSHIP" value="YES">
+                  <label>YES</label>
+                  <input type="radio" name="LOSE CITIZENSHIP" value="NO">
+                  <label>NO</label>
+                  <br><br>
+
+                  <label>ARE YOU CURRENTLY A CITIZEN OF ANOTHER COUNTRY?</label>
+                  <input type="radio" name="CITIZEN OF ANOTHER COUNTRY" value="YES">
+                  <label>YES</label>
+                  <input type="radio" name="CITIZEN OF ANOTHER COUNTRY" value="NO">
+                  <label>NO</label>
+                  <br><br>
+
+                  <label>IF YES, FROM WHAT COUNTRY?</label>
+                    <input type="COUNTRY" name="" value="">
+                  <br><br>
+
+                  <label> HAVE YOU SERVED IN ANY FOREIGN MILITARY?</label>
+                  <input type="radio" name="OREIGN MILITARY" value="YES">
+                  <label>YES</label>
+                  <input type="radio" name="OREIGN MILITARY" value="NO">
+                  <label>NO</label>
+                  <br><br>
+
+                  <label>IF YES, FROM WHAT COUNTRY?</label>
+                    <input type="COUNTRY" name="" value="">
+                  <br><br>
+
+                </td>
+              </tr>
+
+          </table>
+      </table>
+    </fieldset>
+
+    <fieldset>
+        <legend>APPLICANT’S CONTACT INFORMATION</legend>
+        <br />
+      <table cellspacing = "30">
+        <tr>
+            <td>
+              <label>HOME ADDRESS:  </label>
+              <br /><br />
+              <textarea name="" rows="4" cols=80"></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+              <label>PRESENT ADDRESS: </label>
+              <br /><br />
+              <textarea name="" rows="4" cols=80"></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+              <label>MIDDLE NAME or MAIDEN LAST NAME </label>
+              <br /><br />
+              <textarea name="" rows="4" cols=60"></textarea>
+            </td>
+        </tr>
+
+        <tr>
+          <td>
+              <br /><br>
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+
+  </form>
+  </body>
+</html>
