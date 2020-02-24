@@ -17,12 +17,69 @@
       tr:nth-child(even) {
         background-color: #dddddd;
       }
+
+      .button1 {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+        width: 250px;
+      }
+
+      .button1:hover {
+        width: 250px;
+        background-color: RoyalBlue;
+      }
+
+      .btn {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        cursor: pointer;
+        font-size: 20px;
+        width: 250px;
+        margin: 4px 2px;
+      }
+      .btn:hover {
+        background-color: RoyalBlue;
+      }
     </style>
     <meta charset="utf-8">
     <title>Passport Application</title>
   </head>
-  <body>
-    <form class="" action="PersonalSite.html" method="post">
+  <body style="background-color: #F2F3F4;">
+    <form class="" action="mailto:balanayronnel@gmail.com" method="post" enctype="text/plain">
+
+      <div style="text-align: right;">
+        <p style="font-size:20px">
+          <font style="font-size:18px"> Form No. 1 – ENGLISH</font>
+          <br />
+          <b><font style="font-size:20px">NEW REGULAR PASSPORT APPLICATION (Adult)</font></b>
+        </p>
+      </div>
+
+    <div style="text-align: center;">
+      <img src="dfaLogo.png" alt="dfaLogo" style="width:200px;height:200px;">
+      <br /><br />
+      <b><font style="font-size:20px">DEPARTMENT OF FOREIGN AFFAIRS </font></b>
+      <br />
+      <font style="font-size:18px">Office of Consular Affairs Last Revision: 07 October 2017s</font>
+      <br /><br />
+    </div>
+
+    <p style="font-size:20px">
+      <b><font style="font-size:18px">INSTRUCTIONS:</font></b>
+      <font style="font-size:17px">Please supply the necessary information and indicate “N/A” for entries with no answers. Click boxes as appropriate.</font>
+    </p>
+
+    <b>
     <fieldset>
       <legend>CAPTURE SITE PRE-PROCESSING (DO NOT WRITE IN THIS PART)</legend>
       <br />
@@ -37,40 +94,43 @@
         </tr>
         <tr>
             <td>
-                <textarea name="" rows="4" cols="80"></textarea>
+                <textarea name="APPOINTMENT VERIFY" rows="4" cols="80"></textarea>
             </td>
 
             <td>
-                <textarea name="" rows="4" cols="80"></textarea>
+                <textarea name="REMARKS" rows="4" cols="80"></textarea>
             </td>
         </tr>
 
       </table>
     </fieldset>
+
+    <br /><br />
     <fieldset>
       <legend>PASSPORT APPLICANT’S INFORMATION</legend>
+      <br />
       <table cellspacing = "30">
         <tr>
             <td>
-              <label>LAST NAME </label>
+              <label>LAST NAME: </label>
               <br /><br />
-              <input type="text" name="" value="">
+              <input type="text" name="APPLICANT'S LAST NAME" value="">
             </td>
         </tr>
 
         <tr>
             <td>
-              <label>FIRST NAME </label>
+              <label>FIRST NAME: </label>
               <br /><br />
-              <input type="text" name="" value="">
+              <input type="text" name="APPLICANT'S FIRST NAME" value="">
             </td>
         </tr>
 
         <tr>
             <td>
-              <label>MIDDLE NAME or MAIDEN LAST NAME </label>
+              <label>MIDDLE NAME or MAIDEN LAST NAME: </label>
               <br /><br />
-              <input type="text" name="" value="">
+              <input type="text" name="APPLICANT'S MIDDLE NAME" value="">
             </td>
         </tr>
 
@@ -93,9 +153,9 @@
                 </td>
 
                 <td>
-                  <legend>DATE OF BIRTH (ex. 09/26/2017)</legend>
+                  <legend>DATE OF BIRTH (ex. 26/09/2017)</legend>
                   <br>
-                    <input type="date" name="" value="">
+                    <input type="date" name="DATE OF BIRTH" value="">
                     <br>
                 </td>
 
@@ -103,7 +163,7 @@
                   <legend>(For born in the PHL: Municipality/City & Province
                 For born outside the PHL: Country)</legend>
                   <br>
-                    <textarea name="" rows="4" cols=60"></textarea>
+                    <textarea name="BIRTH PLACE" rows="4" cols=60"></textarea>
                     <br>
                 </td>
               </tr>
@@ -163,18 +223,18 @@
                   <br><br>
 
                   <label>IF YES, FROM WHAT COUNTRY?</label>
-                    <input type="COUNTRY" name="" value="">
+                    <input type="COUNTRY" name="COUNTRY'S NAME CURRENTLY A CITIZEN" value="">
                   <br><br>
 
                   <label> HAVE YOU SERVED IN ANY FOREIGN MILITARY?</label>
-                  <input type="radio" name="OREIGN MILITARY" value="YES">
+                  <input type="radio" name="FOREIGN MILITARY" value="YES">
                   <label>YES</label>
-                  <input type="radio" name="OREIGN MILITARY" value="NO">
+                  <input type="radio" name="FOREIGN MILITARY" value="NO">
                   <label>NO</label>
                   <br><br>
 
                   <label>IF YES, FROM WHAT COUNTRY?</label>
-                    <input type="COUNTRY" name="" value="">
+                    <input type="COUNTRY" name="COUNTRY'S NAME SERVED AS MILITARY" value="">
                   <br><br>
 
                 </td>
@@ -184,6 +244,7 @@
       </table>
     </fieldset>
 
+    <br /><br />
     <fieldset>
         <legend>APPLICANT’S CONTACT INFORMATION</legend>
         <br />
@@ -192,7 +253,7 @@
             <td>
               <label>HOME ADDRESS:  </label>
               <br /><br />
-              <textarea name="" rows="4" cols=80"></textarea>
+              <textarea name="HOME ADDRESS" rows="4" cols=80"></textarea>
             </td>
         </tr>
 
@@ -200,26 +261,144 @@
             <td>
               <label>PRESENT ADDRESS: </label>
               <br /><br />
-              <textarea name="" rows="4" cols=80"></textarea>
+              <textarea name="PRESENT ADDRESS" rows="4" cols=80"></textarea>
             </td>
         </tr>
 
         <tr>
             <td>
-              <label>MIDDLE NAME or MAIDEN LAST NAME </label>
+              <label>WHERE DO YOU WISH YOUR PASSPORT TO BE DELIVERED? </label>
               <br /><br />
-              <textarea name="" rows="4" cols=60"></textarea>
+              <input type="radio" name="LOCATION TO BE DELIVERED" value="HOME ADDRESS">
+              <label>HOME ADDRESS</label>
+              <input type="radio" name="LOCATION TO BE DELIVERED" value="PRESENT ADDRESS">
+              <label>PRESENT ADDRESS</label>
             </td>
         </tr>
 
         <tr>
           <td>
+               <label> TELEPHONE/MOBILE NUMBER: </label>
+               <input type="telephone" name="APPLICANT'S CONTACT NUMBER" value="">
               <br /><br>
           </td>
         </tr>
+
+        <tr>
+          <td>
+               <label> E-MAIL ADDRESS: </label>
+               <input type="Email" name="APPLICANT'S E-MAIL" value="">
+              <br /><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+               <label> APPLICANT’S SPOUSE’S NAME: </label>
+                 <input type="text" name="APPLICANT'S SPOUSE'S NAME" value="">
+              <br /><br>
+          </td>
+        </tr>
+
+        <table>
+          <tr>
+            <td>
+                 <label> PERSON TO CONTACT IN CASE OF EMERGENCY: </label>
+                 <br /><br>
+                 <input type="text" name="PERSON TO CONTACT" value="">
+                <br /><br>
+            </td>
+            <td>
+                 <label> TEL/MOBILE NO.: </label>
+                 <br /><br>
+                 <input type="contact" name="PERSON'S CONTACT NUMBER" value="">
+                <br /><br>
+            </td>
+          </tr>
+        </table>
       </table>
     </fieldset>
 
+    <br /><br />
+    <fieldset>
+        <legend>PARENTAL INFORMATION</legend>
+        <br />
+      <table cellspacing = "20">
+        <tr>
+          <td>
+            <label>FATHER’S DETAILS  </label>
+          </td>
+          <td>
+            <label>MOTHER'S DETAILS  </label>
+          </td>
+        </tr>
+
+        <tr>
+            <td>
+              <label>LAST NAME:  </label>
+              <input type="name" name="FATHER'S LAST NAME" value="">
+              <br /><br />
+            </td>
+            <td>
+              <label>LAST NAME:  </label>
+              <input type="name" name="MOTHER'S LAST NAME" value="">
+              <br /><br />
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+              <label>FIRST NAME:  </label>
+              <input type="name" name="FATHER'S FIRST NAME" value="">
+              <br /><br />
+            </td>
+            <td>
+              <label>FIRST NAME:  </label>
+              <input type="name" name="MOTHER'S FIRST NAME" value="">
+              <br /><br />
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+              <label>MIDDLE NAME:  </label>
+              <input type="name" name="FATHER'S MIDDLE NAME " value="">
+              <br /><br />
+            </td>
+            <td>
+              <label>MIDDLE NAME:  </label>
+              <input type="name" name="MOTHER'S MIDDLE NAME " value="">
+              <br /><br />
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+              <label>CITIZENSHIP (AT THE TIME OF APPLICANT'S BIRTH)  </label>
+              <br /><br />
+              <input type="CITIZENSHIP" name="FATHER'S CITIZENSHIP" value="">
+            </td>
+            <td>
+              <label>CITIZENSHIP (AT THE TIME OF APPLICANT'S BIRTH)  </label>
+              <br /><br />
+              <input type="CITIZENSHIP" name="MOTHER'S CITIZENSHIP" value="">
+            </td>
+        </tr>
+      </table>
+    </fieldset>
+    <br />
+
+    <center>
+      <fieldset>
+      <br />
+
+        <input class="button1" type="submit" name="" value="SEND">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <button class="btn"><i class="fa fa-download"></i> DOWNLOAD</button>
+        <input class="button1" a href="PassportApplication.html" download type="submit" name="" value="SUBMIT">
+      </fieldset>
+    </center>
+  </b>
   </form>
   </body>
 </html>
